@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registration__form.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="../images/logo.png">
+    <script src="../script/shrift.js" defet></script>
+    <title>MONOCHROMIST</title>
+  </head>
+  <div id='stars' ></div>
+<div id='stars2' ></div>
+<div id='stars3' ></div>
+  <body >
+    <main>
+      <div class="cont">
+        <div class="pg signupC" id="signupC">
+            <h2 style=" color: rgb(233, 221, 221);">Signup</h2>
+            <form action="signup" method="POST" class="form__signup">
+                <label for="name">Name</label>
+                <input
+                class="place__fill"
+                type="text"
+                name="name"
+                id="signup-name"
+              />
+                <label for="surname">Surname</label>
+                <input 
+                class="place__fill"
+                type="text"
+                name="surname"
+                id="signup-surname"
+                />
+                <label for="email">Email</label>
+                <input
+                class="place__fill"
+                type="email"
+                name="email"
+                id="signup-email"
+                autocomplete="off"
+              />
+                <label for="password">Password</label>
+                <div class="pwd">
+                    <input
+                    class="place__fill"
+                    type="text"
+                    name="pass"
+                    id="signup-pass"
+                  />
+                    <i onclick="textPwdS()" class="far fa-eye" id="eyeOS" style="display: none;"></i>
+                    <i onclick="textPwdS()" class="far fa-eye-slash" id="eyeSS"></i>
+                </div>
+            </form>
+            <button class="signup__submit">
+              <input
+                class="signup-submit"
+                type="submit"
+                value="Send"
+                id="signup-submit"
+              />
+            </button>
+            <p class="pt" id="loginF" onclick="switchToLogin()">Already have an Account? Login</p>
+        </div>
+
+        <div style="display:none;" class="loginC pg" id="loginC">
+            <h2>Login</h2>
+            <form action="login" method="POST">
+                <label for="username">Email</label>
+                <input
+                class="place__fill"
+                type="text"
+                name="email"
+                id="login-email"
+
+              />
+                <label for="password">Password</label>
+                <div class="pwd">
+                    <input class="place__fill" type="text" name="pass" id="login-pass" />
+                    <i onclick="textPwdL()" class="far fa-eye" id="eyeOL" style="display: none;"></i>
+                    <i onclick="textPwdL()" class="far fa-eye-slash" id="eyeSL"></i>
+                </div>
+            </form>
+            <button class="login__submit">
+            <input type="submit" value="Login" id="login-submit"/>
+            </button>
+            <p class="pt" id="signupF" onclick="switchToSignup()">Don't have an account yet? Signup</p>
+        </div>
+    </div>
+
+</main>
+      <body>
+
+   
+    <script src="../script/login.js"></script>
+    <script src="../script/ajax.js"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

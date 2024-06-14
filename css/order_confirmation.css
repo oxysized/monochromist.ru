@@ -1,0 +1,259 @@
+@font-face {
+  font-family: sans;
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: FUTHA;
+  src: url(../fonts/Rurikviking-Regular.otf);
+}
+
+@font-face {
+  font-family: kode;
+  src: url(../fonts/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: comf;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.8);
+  padding: 0 25px 0 25px;
+  height: 80px;
+}
+
+.userLogin {
+  display: flex;
+  align-items: center;
+}
+
+.userLogin .shopping__cart {
+  width: 35px;
+  height: 35px;
+  padding-right: 15px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.userLogin img:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.userLogin p {
+  color: white;
+  font-size: 20pt;
+  text-decoration: none;
+  font-family: sans;
+}
+
+.userLogin p:visited {
+  text-decoration: none;
+}
+
+.userLogin p:hover {
+  text-decoration: underline;
+}
+
+.shopping__cart {
+  margin-left: 10px;
+}
+
+.heart {
+  width: 30px;
+  height: 30px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.heart__count {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: #1c1c1c;
+  padding-top: 20px;
+}
+
+#cartCount {
+  font-family: kode;
+  font-size: 9pt;
+  color: white;
+  position: absolute;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+.logo a:visited {
+  color: white;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+  font-family: kode;
+  text-decoration: none;
+  color: white;
+  font-size: 44pt;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__screen {
+  background: #ffffff;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+  background-color: #000000;
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+  background-color: #000000;
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 5;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  top: 7px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  z-index: 4;
+}
+
+.menu__box p {
+  display: grid;
+  align-items: end;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: kode;
+  font-size: 18pt;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  font-weight: bolder;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+.text__info {
+  display: flex;
+  justify-content: center;
+  font-family: comf;
+  padding-top: 70px;
+  padding-bottom: 95px;
+  padding-left: 371px;
+  padding-right: 371px;
+  margin: auto;
+  font-size: 16pt;
+}
+
+.text__info p {
+  font-size: 36pt;
+}
+
+footer {
+  background: #1c1c1c;
+  max-width: auto;
+  height: 100px;
+  color: white;
+}
+
+footer {
+  background: #1c1c1c;
+  max-width: auto;
+  height: 100px;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+
+.footer__text a {
+  text-decoration: none;
+  color: white;
+  font-family: comf;
+}
+
+.footer__text {
+  padding-top: 15px;
+}
+
+.footer_first_text {
+  display: flex;
+  justify-content: space-around;
+}
+
+.webstore__info {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  font-family: sans;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/clothing__store.css" />
+    <link rel="icon" href="../images/logo.png" />
+    <script src="../script/modal_window.js" defer></script>
+    <script src="../script/user_name.js" defer></script>
+    <script src="../script/localstorage.js" defer></script>
+    <script src="../script/favorite.js" defer></script>
+    <title>MONOCHROMIST</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="clothing__store.html">SHOP</a></li>
+          <li>
+            <a class="menu__item" href="delivery__things.html">DELIVERY</a>
+          </li>
+          <li>
+            <a class="menu__item" href="payment__methods.html">PAYMENT</a>
+          </li>
+          <li><a class="menu__item" href="about__company.html">ABOUT US</a></li>
+          <li><p class="menu__item">© 2024 MONOCHROMIST</p></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <p><a href="../index.html">MONOCHROMIST</a></p>
+      </div>
+      <div class="userLogin" id="username">
+        <div class="heart__count">
+          <span id="cartCount">0</span>
+          <a href="favorite__cart.html" class="heart-link">
+            <img src="../images/heart.png" alt="heart" class="heart" />
+          </a>
+        </div>
+        <a href="registration__form.html">
+          <p>Login</p>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="catalog__items">
+        <div class="items__shop">
+          <div class="items">
+            <img src="../images/t-shuts.png" alt="" class="item-image" />
+            <h1 class="item-title">
+              THE SOUL<img src="../images/cloack.png" />
+            </h1>
+            <p>
+              No matter who you are, you have a bright soul that does good...
+              <button class="section__button">More</button>
+            </p>
+            <div class="section__btn">
+              <button
+                id="likeButton"
+                class="likeButton"
+                data-title="THE SOUL"
+                data-price="150"
+                data-image="../images/t-shuts.png"
+              >
+                Like
+              </button>
+              <button
+                class="btn__buy"
+                data-title="THE SOUL"
+                data-price="150"
+                data-image="../images/t-shuts.png"
+              >
+                150 USD
+              </button>
+            </div>
+          </div>
+          <div class="modal">
+            <div class="modal__main">
+              <div class="modal__container">
+                <img src="../images/t-shuts.png" alt="" class="item-image" />
+                <div class="modal__info">
+                  <h1 class="modal__title">
+                    THE SOUL<img src="../images/cloack.png" alt="" />
+                  </h1>
+                  <p style="font-size: 14pt">
+                    No matter who you are, you have a bright soul that does good
+                    deeds for the benefit of others. The "THE SOUL" T-shirt
+                    represents mercy. Each copy of this T-shirt is extremely
+                    unique (but does not deviate from the idea), as the design
+                    is made with hands and heart.
+                  </p>
+                  <div class="cloa">
+                    <p>
+                      <img src="../images/cloack.png" alt="" class="cloack" /> -
+                      the production time of the product may be longer than the
+                      prescribed time
+                    </p>
+                  </div>
+
+                  <div class="size__clothes">
+                    <label>
+                      <input type="radio" name="size" value="S" />
+                      <span>S</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="size" value="M" />
+                      <span>M</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="size" value="L" />
+                      <span>L</span>
+                    </label>
+                    <label>
+                      <input type="radio" name="size" value="XL" />
+                      <span>XL</span>
+                    </label>
+                  </div>
+
+                  <div class="bag_favorite">
+                    <button
+                      id="likeButton"
+                      class="likeButton"
+                      data-title="THE SOUL"
+                      data-price="150"
+                      data-image="../images/t-shuts.png"
+                    >
+                      Like
+                    </button>
+                    <button
+                      class="btn__buy"
+                      data-title="THE SOUL"
+                      data-price="150"
+                      data-image="../images/t-shuts.png"
+                    >
+                      150 USD
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <button class="modal__close">&#10006;</button>
+            </div>
+          </div>
+          <div class="items">
+            <img src="../images/question.png" alt="" class="item-image" />
+            <h1 class="item-title">Who...</h1>
+            <p>Who if not you...</p>
+            <div class="section__btn">
+              <button>?????</button>
+              <button>?????</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__text">
+        <div class="footer_first_text">
+          <a href="contract__offer.html">Договор оферты</a>
+          <a href="privacy__policy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="webstore__info">
+          <p>@monochromistru_bot</p>
+          <p>© 2024 MONOCHROMIST webstore in RU</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

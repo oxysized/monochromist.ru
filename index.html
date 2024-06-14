@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/logo.png" />
+    <script src="script/clothing_add.js" defer></script>
+    <script src="script/favorite.js" defer></script>
+    <script src="script/main.js" defer></script>
+    <title>MONOCHROMIST</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li>
+            <a class="menu__item" href="html/clothing__store.html">SHOP</a>
+          </li>
+          <li>
+            <a class="menu__item" href="html/delivery__things.html">DELIVERY</a>
+          </li>
+          <li>
+            <a class="menu__item" href="html/payment__methods.html">PAYMENT</a>
+          </li>
+          <li>
+            <a class="menu__item" href="html/about__company.html">ABOUT US</a>
+          </li>
+          <li>
+            <p class="menu__item">© 2024 MONOCHROMIST</p>
+          </li>
+        </ul>
+      </div>
+      <div class="logo">
+        <p><a href="index.html">MONOCHROMIST</a></p>
+      </div>
+      <div class="userLogin" id="username">
+        <div class="heart__count">
+          <span id="cartCount">0</span>
+          <a href="html/favorite__cart.html" class="heart-link">
+            <img src="images/heart.png" alt="heart" class="heart" />
+          </a>
+        </div>
+        <a href="html/registration__form.html">
+          <p>Login</p>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <ul id="slide_">
+          <div>
+            <li class="slide" id="slide">
+              <img src="images/t-shuts.png" alt="image one" />
+              <div class="name__shop">
+                <h1>THE SOUL</h1>
+                <p>
+                  No matter who you are, you have a bright soul that does good
+                  deeds for the benefit of others. The "THE SOUL" T-shirt
+                  represents mercy. Each copy of this T-shirt is extremely
+                  unique (but does not deviate from the idea), as the design is
+                  made with hands and heart.
+                </p>
+
+                <div class="btn">
+                  <button
+                    id="likeButton"
+                    data-title="THE SOUL"
+                    data-price="150"
+                    data-image="../images/t-shuts.png"
+                  >
+                    Like
+                  </button>
+                  <button
+                    class="btn__buy"
+                    data-title="THE SOUL"
+                    data-price="150"
+                    data-image="../images/t-shuts.png"
+                  >
+                    Buy
+                  </button>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="slide" id="slide">
+              <img src="images/question.png" alt="image two" />
+              <div class="name__shop">
+                <h1>Who...</h1>
+                <p>Who if not you...</p>
+                <div class="btn">
+                  <button>????</button> <button>????</button>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="slide" id="slide">
+              <img src="images/question.png" alt="image three" />
+              <div class="name__shop">
+                <h1>Obscure</h1>
+                <p></p>
+                <div class="btn">
+                  <button>????</button> <button>????</button>
+                </div>
+              </div>
+            </li>
+          </div>
+          <div>
+            <li class="slide" id="slide">
+              <img src="images/question.png" alt="image four" />
+              <div class="name__shop">
+                <h1>Obscure</h1>
+                <p></p>
+                <div class="btn">
+                  <button>????</button> <button>????</button>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </main>
+    <div class="pagination-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <div class="season__collection">
+      <div class="collection_future">
+        <div class="block__time">
+          <div class="title_reelease">
+            <h1>Autumn</h1>
+            <p>Date release: 09.09.2024</p>
+          </div>
+        </div>
+        <div class="block__time">
+          <div class="title_reelease">
+            <h1>Winter</h1>
+            <p>Date release: 12.12.2024</p>
+          </div>
+        </div>
+        <div class="block__time">
+          <div class="title_reelease">
+            <h1>Spring</h1>
+            <p>Date release: 03.03.2025</p>
+          </div>
+        </div>
+        <div class="block__time">
+          <div class="title_reelease">
+            <h1>Summer</h1>
+            <p>Date release: 06.06.2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__text">
+        <div class="footer_first_text">
+          <a href="html/contract__offer.html">Договор оферты</a>
+          <a href="html/privacy__policy.html">Политика конфиденциальности</a>
+        </div>
+        <div class="webstore__info">
+          <p>@monochromistru_bot</p>
+          <p>© 2024 MONOCHROMIST webstore in RU</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
